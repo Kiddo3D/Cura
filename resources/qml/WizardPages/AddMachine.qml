@@ -12,7 +12,7 @@ Item
 {
     id: base
 
-    property string activeManufacturer: "Ultimaker";
+    property string activeManufacturer: "Kiddo";
 
     property variant wizard: null;
 
