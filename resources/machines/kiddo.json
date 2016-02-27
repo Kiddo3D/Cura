@@ -1,0 +1,10 @@
+{
+    "id": "kiddo",
+    "version": 1, 
+    "name": "Kiddo",
+    "manufacturer": "Kiddo",
+    "author": "Kiddo",
+    "platform": "kiddo_platform.stl",
+    "file_formats": "text/x-gcode",
+    "inherits": "fdmprinter.json"
+}
