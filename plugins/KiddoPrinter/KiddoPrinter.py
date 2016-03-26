@@ -123,6 +123,6 @@ class KiddoPrinter(OutputDevice):
         
         Logger.log("d", "Calling SmartControl with file %s", file_name)
         try:
-            subprocess.call([smart_control_location, file_name, "--temp-file"])
+            subprocess.Popen([smart_control_location, file_name, "--temp-file"])
         except OSError as e:
             raise Exception(catalog.i18nc("@info:status", "Could not open SmartControl at {0}: {1}").format(smart_control_location, str(e)))
