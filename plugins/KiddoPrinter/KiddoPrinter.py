@@ -113,7 +113,7 @@ class KiddoPrinter(OutputDevice):
     def _openSmartControl(self, file_name):
         smart_control_location = Preferences.getInstance().getValue("smart_control/location")
         if not smart_control_location:
-            smart_control_location = os.path.join(Application.getInstallPrefix(), "bin", "SmartControl")
+            smart_control_location = "/usr/bin/smartcontrol"
             if hasattr(sys, "frozen"):
                 smart_control_location = os.path.join(os.path.dirname(os.path.abspath(sys.executable)), "..", "SmartControl", "SmartControl")
             if sys.platform == "win32":
