@@ -6,5 +6,11 @@
     "author": "Kiddo",
     "platform": "kiddo_platform.stl",
     "file_formats": "text/x-gcode",
-    "inherits": "fdmprinter.json"
+    "inherits": "fdmprinter.json",
+
+    "overrides": {
+        "machine_gcode_flavor": {
+            "default": "Kiddo"
+        }
+    }
 }
